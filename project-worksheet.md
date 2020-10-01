@@ -7,15 +7,40 @@
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+I want to build a search app to a comic book database. Similar to the Marvel site...but more simplified.
+
+-[https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12]()
 
 ## API
 
-Use this section to include info about the API you have chosen and a code snippet of the data that it returns and is required for your project. 
+I found an API called Comicvine that returns data. I wanted to use Marvels API but there documentation is confusing. Can I maybe get help deciphering it?
 
 
 ```
-{data: {} }
+<response>
+<error>
+<![CDATA[ OK ]]>
+</error>
+<limit>100</limit>
+<offset>0</offset>
+<number_of_page_results>100</number_of_page_results>
+<number_of_total_results>753407</number_of_total_results>
+<status_code>1</status_code>
+<results>
+<issue>
+<aliases/>
+<api_detail_url>
+<![CDATA[ https://comicvine.gamespot.com/api/issue/4000-6/ ]]>
+</api_detail_url>
+<cover_date>
+<![CDATA[ 1952-10-01 ]]>
+</cover_date>
+<date_added>2008-06-06 11:10:16</date_added>
+<date_last_updated>2015-07-11 12:08:20</date_last_updated>
+<deck/>
+<description>
+<![CDATA[ <p>The horrors of:</p><p>- Lost race!</p><p>- The man germ!</p><p>- Man in the hood!</p><p>- The things!</p><p>-Stories behind the stars, featuring the legendary battle between Hercules, Hydra and Iolaus!</p><p>Plus, two page long prose-stories.</p> ]]>
+</description>
 ```
 
 
