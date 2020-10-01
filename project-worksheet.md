@@ -7,9 +7,9 @@
 
 ## Project Description
 
-I want to build a search app to a comic book database. Similar to the Marvel site...but more simplified.
+I want to build a search app to a comic book database. I want the look and functionality to be similar to the Marvel site...but more simplified.
 
--[https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12]()
+- [https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12]()
 
 ## API
 
