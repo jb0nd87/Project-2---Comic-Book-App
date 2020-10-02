@@ -2,14 +2,14 @@
 
 ## Project Links
 
-- [https://github.com/jb0nd87/Project-2---Comic-Book-App]()
+- [Link to github repo](https://github.com/jb0nd87/Project-2---Comic-Book-App)
 - [add your deployment link]()
 
 ## Project Description
 
 I want to build a search app to a comic book database. I want the look and functionality to be similar to the Marvel site...but more simplified. The cards will render looking like the comic book and open up to show the details.
 
-- [https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12]()
+- [Marvel Site](https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12)
 
 ## API
 
