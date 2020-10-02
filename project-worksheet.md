@@ -2,19 +2,18 @@
 
 ## Project Links
 
-- [add your github repo link]()
+- [https://github.com/jb0nd87/Project-2---Comic-Book-App]()
 - [add your deployment link]()
 
 ## Project Description
 
-I want to build a search app to a comic book database. I want the look and functionality to be similar to the Marvel site...but more simplified.
+I want to build a search app to a comic book database. I want the look and functionality to be similar to the Marvel site...but more simplified. The cards will render looking like the comic book and open up to show the details.
 
 - [https://www.marvel.com/comics?&options%5Boffset%5D=0&totalcount=12]()
 
 ## API
 
-I found the Comicvine API that returns data. I wanted to use Marvel's API but their documentation is confusing. Can I maybe get help deciphering it?
-
+I found the Comicvine API that returns data. I wanted to use Marvel's API but their documentation is confusing. Can I maybe get help deciphering it? The  data comes out in XML format so I have to figure out how to render the data without json.
 
 ```
 <response>
@@ -46,7 +45,7 @@ I found the Comicvine API that returns data. I wanted to use Marvel's API but th
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
+Here are my wireframes for how I would like the finished app to look like.
 
 - [add link to your wireframes]()
 - [add link to your react architecture]()
@@ -56,8 +55,8 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
 
-#### MVP EXAMPLE
-- Find and use external api 
+#### MVP
+- Find an use external api 
 - Render data on page 
 - Allow user to interact with the page
 
@@ -74,6 +73,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: |  
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
+| Comic Cards | This will render the Comic Cards in the body |
 | Footer | This will render the header include the nav | 
 
 
