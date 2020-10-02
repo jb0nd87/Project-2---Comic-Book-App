@@ -16,30 +16,30 @@ I want to build a search app to a comic book database. I want the look and funct
 I found the Comicvine API that returns data. The data from Comicvine comes out in XML format so I have to figure out how to render the data without json.
 
 ```
-<response>
-<error>
-<![CDATA[ OK ]]>
-</error>
-<limit>100</limit>
-<offset>0</offset>
-<number_of_page_results>100</number_of_page_results>
-<number_of_total_results>753407</number_of_total_results>
-<status_code>1</status_code>
-<results>
-<issue>
-<aliases/>
-<api_detail_url>
-<![CDATA[ https://comicvine.gamespot.com/api/issue/4000-6/ ]]>
-</api_detail_url>
-<cover_date>
-<![CDATA[ 1952-10-01 ]]>
-</cover_date>
-<date_added>2008-06-06 11:10:16</date_added>
-<date_last_updated>2015-07-11 12:08:20</date_last_updated>
-<deck/>
-<description>
-<![CDATA[ <p>The horrors of:</p><p>- Lost race!</p><p>- The man germ!</p><p>- Man in the hood!</p><p>- The things!</p><p>-Stories behind the stars, featuring the legendary battle between Hercules, Hydra and Iolaus!</p><p>Plus, two page long prose-stories.</p> ]]>
-</description>
+{
+"error": "OK",
+"limit": 100,
+"offset": 0,
+"number_of_page_results": 100,
+"number_of_total_results": 140356,
+"status_code": 1,
+"results": [
+{
+"aliases": null,
+"api_detail_url": "https://comicvine.gamespot.com/api/character/4005-164503/",
+"birth": null,
+"count_of_issue_appearances": 1,
+"date_added": "2020-09-17 10:26:52",
+"date_last_updated": "2020-09-17 10:26:52",
+"deck": null,
+"description": null,
+"first_appeared_in_issue": {
+"api_detail_url": "https://comicvine.gamespot.com/api/first_appeared_in_issue/4000-706899/",
+"id": 706899,
+"name": "HC/TPB",
+"issue_number": "1"
+},
+
 ```
 
 
