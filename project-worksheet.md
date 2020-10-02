@@ -13,7 +13,7 @@ I want to build a search app to a comic book database. I want the look and funct
 
 ## API
 
-I found the Comicvine API that returns data. I wanted to use Marvel's API but their documentation is confusing. Can I maybe get help deciphering it? The  data comes out in XML format so I have to figure out how to render the data without json.
+I found the Comicvine API that returns data. The data from Comicvine comes out in XML format so I have to figure out how to render the data without json.
 
 ```
 <response>
