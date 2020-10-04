@@ -5,6 +5,7 @@ import ComicInfo from './components/ComicInfo';
 import { Link, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
+// import Comics from './components/Comics';
 
 function App() {
 	const [comicData, setComicData] = useState({});
@@ -49,6 +50,9 @@ function App() {
 					<Route exact path='/Home'>
 						<Home />
 					</Route>
+					{/* <Route path='/Comics'>
+						<Comics />
+					</Route> */}
 					<Route path='/About'>
 						<About />
 					</Route>
