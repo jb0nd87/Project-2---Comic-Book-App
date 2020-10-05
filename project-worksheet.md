@@ -48,7 +48,7 @@ I found the Comicvine API that returns data. The data from Comicvine comes out i
 Here are my wireframes for how I would like the finished app to look like.
 
 - [Wireframes](https://wireframepro.mockflow.com/editor.jsp?editor=on&publicid=M691d78876174be864032a631e0b2cf761601641559109&perm=Create&projectid=Mdff3e867f4589556f14f364e92015cab1601641751834&ptitle=Comic%20app&bgcolor=white&category=Ma075999a4338333eed91b3af8ac6507f1583824829811&store=yes#/page/d9f1e7c5497746d8a0d668bedde05334)
-- [add link to your react architecture]()
+- [add link to your react architecture](https://res.cloudinary.com/dv01780vo/image/upload/v1601909000/IMG_20201005_074121_ybsc74.jpg)
 - [Time/Priority Matrix](https://res.cloudinary.com/dv01780vo/image/upload/v1601908425/IMG_20201005_073126_tyfz1o.jpg)
 
 
