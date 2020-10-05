@@ -86,9 +86,9 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | App | H | 8hrs| hrs | hrs |
 | Header | M | 3hrs| hrs | hrs |
 | Comics | H | 8hrs | hrs | hrs |
-| Comic Cards | H | 3hrs | hrs | hrs |
+| Comic Cards | H | 8hrs | hrs | hrs |
 | Footer | L | 3hrs | hrs | hrs |
-| Total | H | 25hrs| 5hrs | 5rs |
+| Total | H | 30hrs| 5hrs | 5rs |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.  -->
