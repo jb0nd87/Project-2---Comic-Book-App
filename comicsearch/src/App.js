@@ -14,6 +14,7 @@ function App() {
 
 	const getComic = (characters) => {
 		fetch(
+			// need to figure out a better fix for CORS
 			`https://cors-anywhere.herokuapp.com/https://comicvine.gamespot.com/api/characters?api_key=976a615610f5757cbf1e12ceba7d6e5db194e594&format=json`
 		)
 			.then((response) => response.json())
@@ -60,8 +61,9 @@ function App() {
 			</main>
 			{/* <div>This is the input value from the form: {formInput}</div> */}
 			<Form handleSubmit={handleSubmit} formInput={formInput} />
+			{/* this maps the data from the API but i need to figure out where to actually map it to in order to pull out individual data from the form */}
 			{comicAPIResults.map((comic) => {
-				return <ComicInfo comicData={comic} otherProp={'date'} />;
+				return <ComicInfo comicData={comic} />;
 			})}
 		</div>
 	);
