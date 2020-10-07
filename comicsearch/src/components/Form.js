@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+// import Comics from './Comics';
 
 const Form = (props) => {
 	const [charName, setCharName] = useState('');
@@ -9,6 +10,7 @@ const Form = (props) => {
 		props.handleSubmit(charName);
 		setCharName('');
 	};
+
 
 	const handleChange = (event) => {
 		console.log('handleChange clicked');
@@ -25,7 +27,7 @@ const Form = (props) => {
 					value={charName}
 					onChange={handleChange}
 				/>
-				<input type='submit' value='Search' />
+				<input type='submit' value='Submit' />
 			</form>
 		</>
 	);

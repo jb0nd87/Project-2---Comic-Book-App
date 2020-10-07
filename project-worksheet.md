@@ -83,12 +83,12 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| App | H | 8hrs| 3hrs | hrs |
+| App | H | 10hrs| 6hrs | hrs |
 | Header | M | 3hrs| 2hrs | hrs |
-| Comics | H | 8hrs | 3hrs | hrs |
-| Comic Cards | H | 8hrs | hrs | hrs |
+| Comics | H | 10hrs | 5hrs | hrs |
+| Comic Cards | H | 10hrs | hrs | hrs |
 | Footer | L | 3hrs | hrs | hrs |
-| Total | H | 30hrs| 8hrs | hrs |
+| Total | H | 36hrs| 13hrs | hrs |
 
 ## Additional Libraries
  <!-- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc.  -->

@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import 'materialize-css'
+// import { Button, Card, Row, Col } from 'react-materialize'
 import Form from './components/Form';
-import ComicInfo from './components/ComicInfo';
+// import ComicInfo from './components/ComicInfo';
 import { Link, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
-// import Comics from './components/Comics';
+import Comics from './components/Comics';
 
 function App() {
-	const [comicData, setComicData] = useState({});
+	// const [comicData, setComicData] = useState({});
 	const [comicAPIResults, setComicAPIResults] = useState([]);
 	const [formInput, setFormInput] = useState(null);
 
@@ -29,6 +31,11 @@ function App() {
 	}, []);
 
 	const handleSubmit = (input) => {
+		const filterArray = comicAPIResults.filter((hero) => {
+			return input === hero.name;
+		});
+		setComicAPIResults(filterArray);
+
 		// getComic(characters);
 		setFormInput(input);
 	};
@@ -40,7 +47,7 @@ function App() {
 					<h2>Home</h2>
 				</Link>
 				<Link to='/Comics'>
-					<h2>Comics</h2>
+					<h2>Characters</h2>
 				</Link>
 				<Link to='/About'>
 					<h2>About</h2>
@@ -51,20 +58,22 @@ function App() {
 					<Route exact path='/Home'>
 						<Home />
 					</Route>
-					{/* <Route path='/Comics'>
-						<Comics />
-					</Route> */}
+					<Route path='/Comics'>
+						<Form handleSubmit={handleSubmit} formInput={formInput} />
+						<Comics comicData={comicAPIResults} />
+					</Route>
 					<Route path='/About'>
 						<About />
 					</Route>
 				</Switch>
 			</main>
 			{/* <div>This is the input value from the form: {formInput}</div> */}
-			<Form handleSubmit={handleSubmit} formInput={formInput} />
+
+			{/* <Comics comicData={comicAPIResults}/> */}
 			{/* this maps the data from the API but i need to figure out where to actually map it to in order to pull out individual data from the form */}
-			{comicAPIResults.map((comic) => {
+			{/* {comicAPIResults.map((comic) => {
 				return <ComicInfo comicData={comic} />;
-			})}
+			})} */}
 		</div>
 	);
 }
