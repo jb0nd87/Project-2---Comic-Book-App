@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Fira Sans', sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main .p {
+  padding: 15px;
+  margin: 15px;
+}
+
+.main .h3 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.form {
+  padding: 15px;
+  margin: 15px;
 }

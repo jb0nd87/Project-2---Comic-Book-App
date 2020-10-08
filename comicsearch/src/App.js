@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import 'materialize-css'
+import 'materialize-css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Button, Card, Row, Col } from 'react-materialize'
 import Form from './components/Form';
 // import ComicInfo from './components/ComicInfo';
-import { Link, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Comics from './components/Comics';
+import Header from './components/Header';
+// import Card from './components/ComicCard'
 
 function App() {
 	// const [comicData, setComicData] = useState({});
 	const [comicAPIResults, setComicAPIResults] = useState([]);
+	const [filterResults, setFilterResults] = useState([])
 	const [formInput, setFormInput] = useState(null);
+	const [isFilter, setIsFilter] = useState(false)
 
 	const getComic = (characters) => {
 		fetch(
@@ -34,8 +39,8 @@ function App() {
 		const filterArray = comicAPIResults.filter((hero) => {
 			return input === hero.name;
 		});
-		setComicAPIResults(filterArray);
-
+		setFilterResults(filterArray);
+		setIsFilter(true)
 		// getComic(characters);
 		setFormInput(input);
 	};
@@ -43,7 +48,8 @@ function App() {
 	return (
 		<div className='App'>
 			<nav>
-				<Link to='/Home'>
+				<Header />
+				{/* <Link to='/Home'>
 					<h2>Home</h2>
 				</Link>
 				<Link to='/Comics'>
@@ -51,7 +57,7 @@ function App() {
 				</Link>
 				<Link to='/About'>
 					<h2>About</h2>
-				</Link>
+				</Link> */}
 			</nav>
 			<main>
 				<Switch>
@@ -60,7 +66,11 @@ function App() {
 					</Route>
 					<Route path='/Comics'>
 						<Form handleSubmit={handleSubmit} formInput={formInput} />
-						<Comics comicData={comicAPIResults} />
+						{!isFilter ? (
+							<Comics comicData={comicAPIResults} />
+						) : (
+							<Comics comicData={filterResults} />
+						)}
 					</Route>
 					<Route path='/About'>
 						<About />

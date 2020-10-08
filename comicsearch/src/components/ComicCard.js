@@ -1,28 +1,26 @@
 import React from 'react';
-import 'materialize-css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button'
 // import { Button, Card, Row, Col } from 'react-materialize'
 // import ComicInfo from '../components/ComicInfo';
 
 const ComicCard = (props) => {
+	const comic = props.comicData;
 
 return (
-	 <div class="row">
-    	<div class="col s12 m7">
-      		<div class="card">
-        		<div class="card-image">
-          			<img src="images/sample-1.jpg">
-          			<span class="card-title">Card Title</span>
-        		</div>
-        		<div class="card-content">
-          			<p>I am a very simple card. I am good at containing small bits of information.
-          			I am convenient because I require little markup to use effectively.</p>
-        		</div>
-        		<div class="card-action">
-          			<a href="#">This is a link</a>
-       		 	</div>
-     		</div>
-    	</div>
-  	</div>
-)
+	<Card style={{ width: '18rem' }}>
+		<Card.Img variant='top' src={comic.image.small_url} />
+		<Card.Body>
+			<Card.Title>Card Title</Card.Title>
+			<Card.Text>
+				Some quick example text to build on the card title and make up the bulk
+				of the card's content.
+			</Card.Text>
+			<Button variant='primary'>Go somewhere</Button>
+		</Card.Body>
+	</Card>
+);
 }
+
 export default ComicCard

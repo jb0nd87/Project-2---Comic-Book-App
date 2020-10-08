@@ -75,7 +75,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | App | This will make the initial data pull and include React Router| 
 | Header | This will render the header include the nav | 
 | Comic | This will show the first comic on the page |
-| Comic Cards | This will render the Comic Cards in the body |
+| Comic Filter | This will render the Comic Cards in the body |
 | Footer | This will render the header include the nav | 
 
 
@@ -85,8 +85,8 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | --- | :---: |  :---: | :---: | :---: |
 | App | H | 10hrs| 6hrs | hrs |
 | Header | M | 3hrs| 2hrs | hrs |
-| Comics | H | 10hrs | 5hrs | hrs |
-| Comic Cards | H | 10hrs | hrs | hrs |
+| Comics | H | 10hrs | 10hrs | hrs |
+| Comic Filter | H | 10hrs | hrs | hrs |
 | Footer | L | 3hrs | hrs | hrs |
 | Total | H | 36hrs| 13hrs | hrs |
 
@@ -95,10 +95,22 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+The thing that got me the most excited was when I got the .map function to work and return data with the help of Joe and also another friend of mine. 
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+const Comics = (props) => {
+	// const [comicAPIResults, setComicAPIResults] = useState([]);
+	console.log('comics', props.comicData);
+	const renderComicData = () => {
+		return props.comicData
+			? props.comicData.map((comic) => {
+					return <ComicInfo comicData={comic} />;
+			  })
+			: '';
+	};
+	return <>{renderComicData()}</>;
+};
+
+export default Comics;
+
 ```
