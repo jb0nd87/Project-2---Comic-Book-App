@@ -52,3 +52,11 @@
   padding: 15px;
   margin: 15px;
 }
+
+.ComicInfo {
+  list-style: none;
+}
+
+.img {
+  justify-content: center;
+}
