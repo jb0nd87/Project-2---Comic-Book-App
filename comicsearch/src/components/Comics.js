@@ -3,7 +3,7 @@ import ComicInfo from './ComicInfo';
 
 const Comics = (props) => {
 	// const [comicAPIResults, setComicAPIResults] = useState([]);
-	console.log('comics', props.comicData);
+	console.log('comics', props.comicData.comicData);
 	const renderComicData = () => {
 		return props.comicData
 			? props.comicData.map((comic) => {

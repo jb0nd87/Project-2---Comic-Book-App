@@ -15,19 +15,35 @@ import Header from './components/Header';
 function App() {
 	// const [comicData, setComicData] = useState({});
 	const [comicAPIResults, setComicAPIResults] = useState([]);
-	const [filterResults, setFilterResults] = useState([])
+	const [filterResults, setFilterResults] = useState([]);
 	const [formInput, setFormInput] = useState(null);
-	const [isFilter, setIsFilter] = useState(false)
+	const [isFilter, setIsFilter] = useState(false);
 
 	const getComic = (characters) => {
 		fetch(
 			// need to figure out a better fix for CORS
 			`https://cors-anywhere.herokuapp.com/https://comicvine.gamespot.com/api/characters?api_key=976a615610f5757cbf1e12ceba7d6e5db194e594&format=json`
 		)
+			//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 			.then((response) => response.json())
 			.then((data) => {
-				setComicAPIResults(data.results);
-				// console.log('this is results', data.results)
+				// data.results
+				setComicAPIResults(
+					data.results.sort(function (a, b) {
+						var nameA = a.name.toUpperCase(); // ignore upper and lowercase
+						var nameB = b.name.toUpperCase(); // ignore upper and lowercase
+						if (nameA < nameB) {
+							return -1;
+						}
+						if (nameA > nameB) {
+							return 1;
+						}
+
+						// names must be equal
+						return 0;
+					})
+				);
+				// console.log('this is results', data.results);
 			});
 	};
 
@@ -40,11 +56,11 @@ function App() {
 			return input === hero.name;
 		});
 		setFilterResults(filterArray);
-		setIsFilter(true)
+		setIsFilter(true);
 		// getComic(characters);
 		setFormInput(input);
 	};
-
+	console.log(comicAPIResults);
 	return (
 		<div className='App'>
 			<nav>
