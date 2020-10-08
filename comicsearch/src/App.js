@@ -6,10 +6,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from './components/Form';
 // import ComicInfo from './components/ComicInfo';
 import { Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import About from './components/About';
 import Comics from './components/Comics';
 import Header from './components/Header';
+// import Chars from './components/Chars'
 // import Card from './components/ComicCard'
 
 function App() {
@@ -80,6 +81,9 @@ function App() {
 					<Route exact path='/Home'>
 						<Home />
 					</Route>
+					{/* <Route>
+						<Chars />
+					</Route> */}
 					<Route path='/Comics'>
 						<Form handleSubmit={handleSubmit} formInput={formInput} />
 						{!isFilter ? (

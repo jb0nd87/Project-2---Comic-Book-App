@@ -7,14 +7,12 @@ const ComicInfo = (props) => {
 
 	return (
 		<div>
-			<ul>
+			<ul className='characters'>
 				<li>{comic.name}</li>
 				<li>Aliases: {comic.aliases}</li>
-				<li>
-					<img src={comic.image.medium_url} alt={comic.icon_url} />
-				</li>
 				<li>Description: {comic.deck}</li>
 			</ul>
+			<img src={comic.image.medium_url} alt={comic.icon_url} />
 		</div>
 	);
 };
