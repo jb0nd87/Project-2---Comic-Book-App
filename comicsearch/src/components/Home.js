@@ -11,7 +11,7 @@ const Home = (props) => {
 				Here you can find all that you want to learn about your favorite
 				characters!
 			</p>
-			<Carousel>
+			{/* <Carousel>
 				<Carousel.Item>
 					<img
 						className='d-block w-100'
@@ -49,7 +49,7 @@ const Home = (props) => {
 						</p>
 					</Carousel.Caption>
 				</Carousel.Item>
-			</Carousel>
+			</Carousel> */}
 		</div>
 	);
 };
