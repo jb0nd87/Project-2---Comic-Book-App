@@ -3,7 +3,7 @@
 ## Project Links
 
 - [Link to github repo](https://github.com/jb0nd87/Project-2---Comic-Book-App)
-- [add your deployment link]()
+- [Netlify link](https://comic-search.netlify.app)
 
 ## Project Description
 
