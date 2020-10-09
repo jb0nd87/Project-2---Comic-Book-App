@@ -28,7 +28,7 @@ const Form = (props) => {
 					onChange={handleChange}
 				/>
 				<input type='submit' value='Submit' />
-				<input type='submit' value='All Chars' />
+				{/* <input type='submit' value='All Chars' /> */}
 			</form>
 		</>
 	);
