@@ -1,28 +1,33 @@
-body {
-    background-image: url(https://res.cloudinary.com/dv01780vo/image/upload/v1602215375/best-dc-comics-binge-read-dc-universe_ykxniz.jpg);
-    /* width: 100%; */
-    /* position: absolute; */
-    /* top: 0;
+	body {
+		background-image: url(https://res.cloudinary.com/dv01780vo/image/upload/v1602215375/best-dc-comics-binge-read-dc-universe_ykxniz.jpg);
+		/* width: 100%; */
+		/* position: absolute; */
+		/* top: 0;
     left: 0; */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-}
-h1 {
-    color: white;
-    background-color: black;
-    opacity: 90%;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-}
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+	}
+	h1 {
+		color: white;
+		background-color: black;
+		opacity: 90%;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+		margin: 10px;
+		padding: 10px;
+	}
 
-p {
-    color: white;
-    background-color: black;
-    opacity: 90%;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-}
+	p {
+		color: white;
+		background-color: black;
+		opacity: 90%;
+		justify-content: center;
+		align-items: center;
+		display: grid;
+		padding: 10px;
+		margin: 10px;
+	}
+

@@ -4,6 +4,7 @@ form {
     opacity: 90%;
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
 submit {
     color: white;
