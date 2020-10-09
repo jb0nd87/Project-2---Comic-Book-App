@@ -13,7 +13,7 @@ const Header = (props) => {
 					<Navbar.Collapse id='responsive-navbar-nav'>
 						<Nav className='mr-auto'></Nav>
 						<Nav>
-							<Nav.Link href='home'>Home</Nav.Link>
+							{/* <Nav.Link href='home'>Home</Nav.Link> */}
 							<Nav.Link href='comics'>Characters</Nav.Link>
 							<Nav.Link href='about'>About</Nav.Link>
 						</Nav>
