@@ -1,7 +1,7 @@
 ul {
     color: white;
     background: black;
-    opacity: 90%;
+    /* opacity: 90%; */
     display: grid;
     justify-content: center;
     align-items: center;
