@@ -70,6 +70,6 @@
     /* display: flex!important; */
     flex-basis: auto;
     display: block !important;
-    justify-content: right;
+    /* justify-content: right; */
 }
 }
