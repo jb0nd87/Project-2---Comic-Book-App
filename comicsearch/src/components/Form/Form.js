@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Form.css';
 // import Comics from './Comics';
 
 const Form = (props) => {
@@ -10,7 +11,6 @@ const Form = (props) => {
 		props.handleSubmit(charName);
 		setCharName('');
 	};
-
 
 	const handleChange = (event) => {
 		console.log('handleChange clicked');

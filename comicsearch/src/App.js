@@ -3,7 +3,7 @@ import './App.css';
 import 'materialize-css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import { Button, Card, Row, Col } from 'react-materialize'
-import Form from './components/Form';
+import Form from './components/Form/Form';
 // import ComicInfo from './components/ComicInfo';
 import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';

@@ -1,5 +1,5 @@
 import React from 'react';
-import ComicInfo from './ComicInfo';
+import ComicInfo from './ComicInfo/ComicInfo';
 
 const Comics = (props) => {
 	// const [comicAPIResults, setComicAPIResults] = useState([]);

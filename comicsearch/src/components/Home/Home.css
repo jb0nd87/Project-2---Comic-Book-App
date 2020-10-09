@@ -1,3 +1,25 @@
-.Home {
+body {
+    background-image: url(https://res.cloudinary.com/dv01780vo/image/upload/v1602215375/best-dc-comics-binge-read-dc-universe_ykxniz.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 900px;
+    justify-content: center;
+}
+h1 {
+    color: white;
     background-color: black;
+    opacity: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+p {
+    color: white;
+    background-color: black;
+    opacity: 90%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }

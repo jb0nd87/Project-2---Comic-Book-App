@@ -1,0 +1,12 @@
+li {
+    color: white;
+    background: black;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+img {
+    border: white;
+}

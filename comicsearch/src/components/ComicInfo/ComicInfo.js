@@ -1,4 +1,5 @@
 import React from 'react';
+import './ComicInfo.css';
 
 const ComicInfo = (props) => {
 	const comic = props.comicData;

@@ -1,0 +1,7 @@
+form {
+    color: white;
+    background: black;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+}

@@ -5,13 +5,14 @@ import './Home.css'
 
 const Home = (props) => {
 	return (
-		<div>
-			<h1>Welcome!</h1>
-			<p>
-				Here you can find all that you want to learn about your favorite
-				characters!
-			</p>
-			{/* <Carousel>
+		<body>
+			<div>
+				<h1>Welcome!</h1>
+				<p>
+					Here you can find all that you want to learn about your favorite
+					characters!
+				</p>
+				{/* <Carousel>
 				<Carousel.Item>
 					<img
 						className='d-block w-100'
@@ -50,7 +51,8 @@ const Home = (props) => {
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel> */}
-		</div>
+			</div>
+		</body>
 	);
 };
 

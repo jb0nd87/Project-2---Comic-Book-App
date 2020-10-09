@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 
@@ -7,7 +7,7 @@ const Header = (props) => {
     return (
 			<>
 				<Navbar fixed='top' />
-				<Navbar collapseOnSelect expand='md' bg='dark' variant='dark'>
+				<Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
 					<Navbar.Brand href='#home'>Comics!</Navbar.Brand>
 					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 					<Navbar.Collapse id='responsive-navbar-nav'>
