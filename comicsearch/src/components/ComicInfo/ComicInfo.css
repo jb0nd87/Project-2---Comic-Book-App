@@ -1,12 +1,18 @@
-li {
+ul {
     color: white;
     background: black;
     opacity: 90%;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     padding: 5px;
+    text-decoration: none;
 }
+
+li{
+    display: grid;
+}
+
 img {
     border: white;
 }

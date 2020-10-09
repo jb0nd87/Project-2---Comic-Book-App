@@ -9,7 +9,7 @@ const ComicInfo = (props) => {
 	return (
 		<div>
 			<ul className='characters'>
-				<li>{comic.name}</li>
+				<li>Name: {comic.name}</li>
 				<li>Aliases: {comic.aliases}</li>
 				<li>Description: {comic.deck}</li>
 			</ul>
