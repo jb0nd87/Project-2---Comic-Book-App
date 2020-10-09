@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: 900px;
+    background-size: fixed;
     justify-content: center;
 }
 h1 {
