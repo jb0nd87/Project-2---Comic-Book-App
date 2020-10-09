@@ -2,9 +2,8 @@ body {
     background-image: url(https://res.cloudinary.com/dv01780vo/image/upload/v1602215375/best-dc-comics-binge-read-dc-universe_ykxniz.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-size: contain;
-    justify-content: center;
 }
 h1 {
     color: white;
