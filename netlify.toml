@@ -1,4 +1,4 @@
 [build]
   command = "CI= npm run build"
-  publish="comicsearch/build"
+  publish="/build"
   base = "comicsearch"
